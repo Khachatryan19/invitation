@@ -14,4 +14,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::post('/sendInvitation', [UserController::class, 'invite']);
+Route::post('/sendInvitation', [UserController::class, 'index']);
+Route::get('/getAll', [UserController::class, 'getAll']);
+
+//Route::get(/)
