@@ -17,4 +17,4 @@ use Illuminate\Support\Facades\Route;
 Route::post('/sendInvitation', [UserController::class, 'index']);
 Route::get('/getAll', [UserController::class, 'getAll']);
 
-//Route::get(/)
+Route::post('getJsonData', [\App\Http\Controllers\ReaderController::class, 'index']);
